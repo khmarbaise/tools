@@ -17,19 +17,27 @@
   <packaging>pom</packaging>
 
   <scm>
+    <developerConnection>scm:git:git@github.com:khmarbaise/tools.git</developerConnection>
+    <connection>scm:git:git://github.com/khmarbaise/tools.git</connection>
+    <url>https://github.com/khmarbaise/tools</url>
   </scm>
 
   <modules>
     <module>tools-mailinglist</module>
   </modules>
   <dependencyManagement>
-  <dependencies>
-    <dependency>
-      <groupId>net.sourceforge.jwebunit</groupId>
-      <artifactId>jwebunit-core</artifactId>
-      <version>3.2</version>
-    </dependency>
-  </dependencies>
+    <dependencies>
+      <dependency>
+        <groupId>net.sourceforge.jwebunit</groupId>
+        <artifactId>jwebunit-core</artifactId>
+        <version>3.2</version>
+      </dependency>
+      <dependency>
+        <groupId>net.sourceforge.jwebunit</groupId>
+        <artifactId>jwebunit-htmlunit-plugin</artifactId>
+        <version>3.2</version>
+      </dependency>
+    </dependencies>
   </dependencyManagement>
 
   <build>
